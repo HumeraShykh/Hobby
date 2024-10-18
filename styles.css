@@ -1,0 +1,168 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #bb92a6 0%, #ffccdf 100%);
+    color: #333333;
+    background-color: #ffe6f2; /* Light pinkish tone to match MediumVioletRed */
+}
+
+h1, h2 {
+    color: #1b93c2; /* Keeping neon green for the glow effect */
+    text-shadow: 0 0 20px #9dd7eb;
+}
+
+button {
+    background-color: #ff99cc; /* Light pink to match background */
+    border-color: #ff99cc;
+}
+
+button:hover {
+    background-color: #ff66b2; /* Darker pink for hover effect */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: MediumVioletRed; /* Change to match MediumVioletRed */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* White for high contrast */
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd9e8 !important; /* Light pink hover effect */
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-color: rgb(134, 41, 100); /* Matching hero background */
+    color: #ffffff;
+    text-align: center;
+    animation: heroFadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 1s ease;
+    color: #ffffff; /* White text for readability */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: slideInFromRight 1s ease;
+    color: #ffd9e8; /* Light pinkish tone for the lead paragraph */
+}
+
+.hero a {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #ff66b2;
+    color: #000;
+}
+
+/* About Section */
+#about {
+    background-color: #ffccdf; /* Light pinkish background to match theme */
+    color: #333333;
+    padding: 60px 0;
+    animation: fadeIn 1s ease;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    color: MediumVioletRed; /* Accent color */
+}
+
+#about p {
+    font-size: 1.3rem;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #ffe6f2;
+    color: #333333;
+    padding: 60px 0;
+}
+
+/* Community Section */
+#community {
+    background-color: #ffd9e8;
+    color: #333333;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffccdf;
+    color: #333333;
+}
+
+/* Card and Gallery Styling */
+.card {
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5); /* Pinkish glow */
+}
+
+.card-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Button Styling */
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ff66b2;
+    color: #000;
+    border-color: #ff66b2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: MediumVioletRed;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes heroFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
